@@ -1,0 +1,12 @@
+CREATE TABLE users (
+    id BINARY(16) PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    email_verified BOOLEAN NOT NULL DEFAULT 0,
+    phone VARCHAR(18) DEFAULT NULL,
+    phone_verified BOOLEAN NOT NULL DEFAULT 0,
+    password VARCHAR(255) DEFAULT NULL,
+    name VARCHAR(255) DEFAULT NULL,
+    given_name VARCHAR(255) DEFAULT NULL,
+    family_name VARCHAR(255) DEFAULT NULL,
+    picture_url VARCHAR(2048) DEFAULT NULL
+);
