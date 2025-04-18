@@ -2,5 +2,7 @@ CREATE TABLE permissions (
     id BINARY(16) PRIMARY KEY,
     name VARCHAR(512) NOT NULL UNIQUE,
     label VARCHAR(512) DEFAULT NULL,
-    description VARCHAR(1024) DEFAULT NULL
+    description VARCHAR(1024) DEFAULT NULL,
+    scope_type VARCHAR(512) DEFAULT NULL,
+    scope_id BINARY(16) DEFAULT NULL
 );
